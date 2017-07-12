@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<script src="https://unpkg.com/react@15.2.1/dist/react.js"></script>
+		<script src="https://unpkg.com/react-dom@15.2.1/dist/react-dom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+        <title>My First React File</title>
+    </head>
+    <body>
+
+    	<h1>React</h1>
+    	<p>React is a collection of components, small user interface of elements. They compose and nest together to create entire user interfaces:</p>
+    	
+    	<div id="react-container"></div>
+
+    	<script type="text/babel">
+    		// stateless functional component /common syntax - simple function that returns an element
+    		const MyComponent = () => {
+    			return <div><h2>Hello World</h2><p>This is my first React component!</p></div>
+    		};
+
+
+    		/*
+    		// ES6 class
+	    	class MyComponent extends React.Component {
+	    		render() {
+	    			return <div><h2>Hello World</h2><p>This is my first React component!</p></div>
+	    		}
+	    	}
+	    	*/
+
+    		/*
+    		var MyComponent = React.createClass({
+    			render() {
+    				return <div><h2>Hello World</h2><p>This is my first React component!</p></div>
+    			}
+    		});
+    		*/
+
+    		ReactDOM.render(<MyComponent />, document.getElementById('react-container'));
+
+    		/*
+    		// Rendering of the UL with nested LIs
+    		ReactDOM.render(
+    			React.createElement('ul', null, 
+    				React.createElement('li', null, 'item 1'),
+    				React.createElement('li', null, 'item 2'),
+    				React.createElement('li', null, 'item 3')
+    			), 
+    			document.getElementById('react-container')
+    		);
+
+    		// babel enhanced JSX (JavaScript as XML) transpiling
+    		ReactDOM.render(
+    		<ul><li>item 1</li><li>item 2</li><li>item 3</li></ul>, document.getElementById('react-container'));
+    		*/
+    	</script>
+    	
+
+    	
+    </body>
+</html>

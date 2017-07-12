@@ -1,0 +1,14 @@
+{
+  "name": "lyndanode",
+  "version": "1.0.0",
+  "description": "Test application to work with npm and node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ella Musina",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
